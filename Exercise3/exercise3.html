@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <h1><center> My Home Page </center></h1>
+
+
+<style>
+
+body {
+
+   background-image : url("background2.jpg");
+   font-family: cursive;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 24px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+
+    font-size: 24px;
+    text-align: center;
+}
+
+#dog{
+position: absolute	;
+left: 100px;
+}
+
+#laundry{
+position: absolute;
+left: 450px;
+}
+
+#roller{
+position: absolute;
+left: 800px;
+}
+
+#pancake{
+position: absolute;
+left: 100px;
+top: 600px;
+}
+
+#condo{
+position: absolute;
+left: 450px;
+top: 600px;
+}
+
+#gallery{
+position: absolute;
+left: 20%;
+top: 780px;
+}
+
+#job{
+position: absolute;
+left: 800px;
+top: 600px;
+}
+</style>
+
+</head>
+<body>
+
+
+<table>
+  <tr>
+    <th>Full Name</th>
+    <th>Nickname</th>
+    <th>Hobbies</th>
+    <th>Interests</th>
+    <th>Favorite Websites</th>
+  </tr>
+  <tr>
+   <td>Francis Dodi Peralta</td>
+    <td>Dodi / Dods</td>
+    <td>Playing computer games and Watching series</td>
+    <td>Dogs, Movies and Anime</td>
+    <td><p><a href="https://kissanime.to">https://kissanime.to </a> </p>
+        <a href="http://boredpanda.com">http://boredpanda.com</a>
+  </tr>
+
+</table>
+
+
+<h1>Which do I prefer?</h1>
+
+<div id = "dog">
+<p>Dog or Cat?</p>
+
+<p id="demo" style="display:none"><img src="doge.jpg" style="width: 250px;"></p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">I prefer</button>
+</div>
+
+<div id="laundry">
+<p>Washing dishes or Doing laundry?</p>
+
+<p id="demo2" style="display:none"><img src="laundry.png" style="width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">I prefer</button>
+</div>
+
+<div id="roller">
+<p>Ferris wheel or Roller Coaster?</p>
+
+<p id="demo3" style="display:none"><img src="roller.jpg" style="width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">I prefer</button>
+</div>
+
+<div id="pancake">
+<p>Bacon or Pancake?</p>
+
+<p id="demo4" style="display:none"><img src="pancake.jpg" style="width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo4').style.display='block'">I prefer</button>
+</div>
+
+<div id="condo">
+<p>Condominium or House?</p>
+
+<p id="demo5" style="display:none"><img src="condo.jpg" style="width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo5').style.display='block'">I prefer</button>
+</div>
+<br>
+
+<div id="job">
+<p>Win the lottery or find your perfect job?</p>
+
+<p id="demo6" style="display:none"><img src="job.jpg" style="width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo6').style.display='block'">I prefer</button>
+</div>
+<br>
+
+</body>
+</html>
+
