@@ -8,7 +8,7 @@
 <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/style.css">
 </head>
    </head> 
-	<body style="background-image: url(http://localhost/exercise6/codeigniter/Pics/bg.jpg);">
+	<body style="background-image: url(http://localhost/Exercise6/codeigniter/Pics/background2.jpg);">
 <center>
 
 <div id="header">
