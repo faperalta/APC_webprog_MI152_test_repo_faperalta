@@ -61,7 +61,7 @@ a:active {
 
 </head>
 	
-<body style="background-image: url(http://localhost/dods/codeigniter/Pics/background2.jpg);">
+<body style="background-image: url(http://localhost/Exercise6/codeigniter/Pics/background2.jpg);">
 <center>
 <h1><a href = "<?php echo base_url(); ?>index.php/users/add_view">Create Database</a></h1>
 </center>
