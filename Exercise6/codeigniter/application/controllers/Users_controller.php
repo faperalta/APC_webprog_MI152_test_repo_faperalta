@@ -14,6 +14,11 @@
          $this->load->helper('url'); 
          $this->load->view('Users_view',$data); 
       } 
+	  
+	  public function trivia() { 
+		$this->load->helper('form'); 
+         $this->load->view('prefer'); 
+      } 
   
       public function add_student_view() { 
          $this->load->helper('form'); 
@@ -81,10 +86,5 @@
          $data['records'] = $query->result(); 
          $this->load->view('Users_view',$data); 
       } 
-	  
-	  public function trivia(){
-		  $this->load->helper('url'); 
-		  $this->load->view('prefer');
-	  }
    } 
 ?>

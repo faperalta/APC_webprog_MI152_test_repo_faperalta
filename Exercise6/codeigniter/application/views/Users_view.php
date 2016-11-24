@@ -6,7 +6,7 @@
  <center>
 <a href="test.php" target="_self">Home</a> |
 <a href="about.html" target="_self">About Me</a> |
-<a href="<?php echo base_url(); ?>index.php/users/trivia" target="_self">This or That Questions</a> |
+<a href="<?php echo base_url(); ?>index.php/Users_controller/trivia" target="_self">This or That Questions</a> |
 </center>
 
 <style>
