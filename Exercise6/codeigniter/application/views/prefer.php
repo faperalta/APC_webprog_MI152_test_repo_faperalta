@@ -101,7 +101,7 @@ a:active {
 <div id="roller">
 <p>Ferris wheel or Roller Coaster?</p>
 
-<p id="demo3" style="display:none"><img src = "roller.jpg" style = "width: 300px;"></p>
+<p id="demo3" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/roller.jpg" style = "width: 300px;"></p>
 
 <button type="button" onclick="document.getElementById('demo3').style.display='block'">I prefer</button>
 </div>
