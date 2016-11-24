@@ -117,7 +117,7 @@ a:active {
 <div id="condo">
 <p>Condominium or House?</p>
 
-<p id="demo5" style="display:none"><img src = "condo.jpg" style = "width: 250px;"></p>
+<p id="demo5" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/condo.jpg" style = "width: 250px;"></p>
 
 <button type="button" onclick="document.getElementById('demo5').style.display='block'">I prefer</button>
 </div>
