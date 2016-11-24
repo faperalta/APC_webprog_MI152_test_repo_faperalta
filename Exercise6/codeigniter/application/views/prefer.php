@@ -109,7 +109,7 @@ a:active {
 <div id="pancake">
 <p>Bacon or Pancake?</p>
 
-<p id="demo4" style="display:none"><img src = "pancake.jpg" style = "width: 250px;"></p>
+<p id="demo4" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/pancake.jpg" style = "width: 250px;"></p>
 
 <button type="button" onclick="document.getElementById('demo4').style.display='block'">I prefer</button>
 </div>
