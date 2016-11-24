@@ -1,13 +1,5 @@
 <!DOCTYPE html> 
 <html lang = "en">
- 
-   <h1><center> About Me </center></h1>
- 
- <center>
-<a href="test.php" target="_self">Home</a> |
-<a href="about.html" target="_self">About Me</a> |
-<a href="<?php echo base_url(); ?>index.php/Users_controller/trivia" target="_self">This or That Questions</a> |
-</center>
 
 <style>
 
@@ -100,6 +92,46 @@ a:active {
             } 
          ?>
       </table><br><br> 
+	  
+	  
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  
+	  
+			  <center>
+		<a href="test.php" target="_self">Home</a> |
+		<a href="about.html" target="_self">About Me</a> |
+		<a href="<?php echo base_url(); ?>index.php/Users_controller/trivia" target="_self">This or That Questions</a> |
+		</center>
+
+
      <table>
   <tr>
     <th>Full Name</th>

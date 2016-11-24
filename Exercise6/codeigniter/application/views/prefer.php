@@ -15,7 +15,7 @@
 
 body {
 
-   background-image : url("background2.jpg");
+   background-image : url("http://localhost/Exercise6/codeigniter/Pics/background2.jpg");
    font-family: cursive;
 }
 h1 {
@@ -86,7 +86,7 @@ a:active {
 <div id = "dog">
 <p>Dog or Cat?</p>
 
-<p id="demo" style="display:none"><img src = "doge.jpg" style = "width: 250px;"></p>
+<p id="demo" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/doge.jpg" style = "width: 250px;"></p>
 <button type="button" onclick="document.getElementById('demo').style.display='block'">I prefer</button>
 </div>
 
