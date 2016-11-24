@@ -126,7 +126,7 @@ a:active {
 <div id="job">
 <p>Win the lottery or find your perfect job?</p>
 
-<p id="demo6" style="display:none"><img src = "job.jpg" style = "width: 250px;"></p>
+<p id="demo6" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/job.jpg" style = "width: 250px;"></p>
 
 <button type="button" onclick="document.getElementById('demo6').style.display='block'">I prefer</button>
 </div>
