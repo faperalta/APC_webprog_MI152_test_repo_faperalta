@@ -93,7 +93,10 @@ a:active {
          ?>
       </table><br><br> 
 	  
+<<<<<<< HEAD
 	  
+=======
+>>>>>>> c8a37c8d824242bbdcd9fc2e1f31bdd061e11e1c
 	  <br>
 	  <br>
 	  <br>
