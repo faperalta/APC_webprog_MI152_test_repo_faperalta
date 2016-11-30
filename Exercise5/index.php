@@ -74,6 +74,24 @@ function delete_id(id)
     </div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button onclick="location.href = 'homepage.php';" id="myButton" class="float-left submit-button">Back to homepage</button>
+
+
 </center>
 </body>
 </html>
