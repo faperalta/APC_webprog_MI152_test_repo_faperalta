@@ -11,7 +11,7 @@ if(isset($_POST['btn-save']))
  // variables for input data
 
  // sql query for inserting data into database
- $sql_query = "INSERT INTO users(firstname,midname,lastname,homeadd,email) VALUES('$firstname','$midname','$lastname','$homeadd',$'email')";
+ $sql_query = "INSERT INTO users(firstname,midname,lastname,homeadd,email) VALUES('$firstname','$midname','$lastname','$homeadd','$email')";
  // sql query for inserting data into database
  
  // sql query execution function
