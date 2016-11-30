@@ -13,7 +13,7 @@ if(isset($_POST['btn-save']))
  // variables for input data
 
  // sql query for inserting data into database
- $sql_query = "INSERT INTO users(firstname,midname,lastname,homeadd,email,gender,nickname) VALUES('$firstname','$midname','$lastname','$homeadd','$email','$gender','$nickname')";
+ $sql_query = "INSERT INTO users(firstname,midname,lastname,email,gender,nickname,homeadd) VALUES('$firstname','$midname','$lastname','$email','$gender','$nickname','$homeadd)";
  // sql query for inserting data into database
  
  // sql query execution function
@@ -77,7 +77,7 @@ if(isset($_POST['btn-save']))
 		<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="male">Male
     </tr>
 	<tr>
-    <td><input type="text" name="nickname" placeholder="nickname" required /></td>
+    <td><input type="text" name="nickname" placeholder="Nickname" required /></td>
     </tr>
     <tr>
     <td><input type="text" name="homeadd" placeholder="Address" required /></td>
