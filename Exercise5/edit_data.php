@@ -13,11 +13,12 @@ if(isset($_POST['btn-update']))
  $midname = $_POST['midname'];
  $lastname = $_POST['lastname'];
  $email = $_POST['email'];
+ $gender = $_POST['gender'];
  $homeadd = $_POST['homeadd'];
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET firstname='$firstname',midname='$midname',lastname='$lastname',email='$email',homeadd='$homeadd', WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET firstname='$firstname',midname='$midname',lastname='$lastname',email='$email',gender='$gender',homeadd='$homeadd', WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -76,6 +77,11 @@ if(isset($_POST['btn-cancel']))
     </tr>
 	<tr>
     <td><input type="text" name="email" placeholder="Email" value="<?php echo $fetched_row['email']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td>
+	<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="female">Female
+	<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="male">Male</td>
     </tr>
     <tr>
     <td><input type="text" name="homeadd" placeholder="Address" value="<?php echo $fetched_row['homeadd']; ?>" required /></td>
