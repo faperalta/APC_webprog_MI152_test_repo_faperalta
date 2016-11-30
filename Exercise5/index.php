@@ -52,6 +52,7 @@ function delete_id(id)
     <th>First Name</th>
 	<th>Middle Name</th>
     <th>Last Name</th>
+	<th>Email</th>
     <th>Home Address</th>
 	
 	
