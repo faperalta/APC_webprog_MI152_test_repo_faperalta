@@ -16,7 +16,7 @@ if(isset($_POST['btn-update']))
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET firstname='$firstname',midname='$nidname',lastname='$lastname',homeadd='$homeadd' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET firstname='$firstname',midname='$midname',lastname='$lastname',homeadd='$homeadd' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -65,16 +65,16 @@ if(isset($_POST['btn-cancel']))
     <form method="post">
     <table align="center">
     <tr>
-    <td><input type="text" name="firstname" placeholder="First Name" value="<?php echo $fetched_row['first_name']; ?>" required /></td>
+    <td><input type="text" name="firstname" placeholder="First Name" value="<?php echo $fetched_row['firstname']; ?>" required /></td>
     </tr>
 	<tr>
-    <td><input type="text" name="midname" placeholder="Middle Name" required /></td>
+    <td><input type="text" name="midname" placeholder="Middle Name" value="<?php echo $fetched_row['midname']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="lastname" placeholder="Last Name" value="<?php echo $fetched_row['last_name']; ?>" required /></td>
+    <td><input type="text" name="lastname" placeholder="Last Name" value="<?php echo $fetched_row['lastname']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="homeadd" placeholder="Address" value="<?php echo $fetched_row['user_city']; ?>" required /></td>
+    <td><input type="text" name="homeadd" placeholder="Address" value="<?php echo $fetched_row['homeadd']; ?>" required /></td>
     </tr>
     <tr>
     <td>
