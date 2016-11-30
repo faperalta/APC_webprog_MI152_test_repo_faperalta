@@ -5,7 +5,7 @@
  <h1><center> About Me </center></h1>
  
  <center>
-<a href="test.php" target="_self">Home</a> |
+<a href="form.php" target="_self">Home</a> |
 <a href="about.php" target="_self">About Me</a> |
 <a href="prefer.php" target="_self">This or That Questions</a> |
 <a href="index.php" target="_self">Create Database</a> |
