@@ -8,11 +8,12 @@ if(isset($_POST['btn-save']))
  $lastname = $_POST['lastname'];
  $email = $_POST['email'];
  $gender = $_POST['gender'];
+ $nickname = $_POST['nickname'];
  $homeadd = $_POST['homeadd'];
  // variables for input data
 
  // sql query for inserting data into database
- $sql_query = "INSERT INTO users(firstname,midname,lastname,homeadd,email,gender) VALUES('$firstname','$midname','$lastname','$homeadd','$email','$gender')";
+ $sql_query = "INSERT INTO users(firstname,midname,lastname,homeadd,email,gender,nickname) VALUES('$firstname','$midname','$lastname','$homeadd','$email','$gender','$nickname')";
  // sql query for inserting data into database
  
  // sql query execution function
@@ -71,8 +72,12 @@ if(isset($_POST['btn-save']))
     <td><input type="text" name="email" placeholder="Email" required /></td>
     </tr>
 	<tr>
-    <td><input type="radio" name="gender"  <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="female">Female
+    <td>
+		<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="female">Female
 		<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="male">Male
+    </tr>
+	<tr>
+    <td><input type="text" name="nickname" placeholder="nickname" required /></td>
     </tr>
     <tr>
     <td><input type="text" name="homeadd" placeholder="Address" required /></td>
