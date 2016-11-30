@@ -16,11 +16,11 @@ if(isset($_POST['btn-update']))
  $gender = $_POST['gender'];
  $nickname = $_POST['nickname'];
  $homeadd = $_POST['homeadd'];
- $cellno = $_POST['cellno'];
+ $comment = $_POST['comment'];
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET firstname='$firstname',midname='$midname',lastname='$lastname',email='$email',gender='$gender',nickname='$nickname',homeadd='$homeadd',cellno='$cellno', WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET firstname='$firstname',midname='$midname',lastname='$lastname',email='$email',gender='$gender',nickname='$nickname',homeadd='$homeadd',comment='$comment' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -91,8 +91,8 @@ if(isset($_POST['btn-cancel']))
     <tr>
     <td><input type="text" name="homeadd" placeholder="Address" value="<?php echo $fetched_row['homeadd']; ?>" required /></td>
     </tr>
-	<tr>
-    <td><input type="text" name="cellno" placeholder="Cell No." value="<?php echo $fetched_row['cellno']; ?>" required /></td>
+	tr>
+    <td><input type="text" name="comment" placeholder="Comment" value="<?php echo $fetched_row['comment']; ?>" required /></td>
     </tr>
     <tr>
     <td>
