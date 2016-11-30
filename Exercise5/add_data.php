@@ -11,10 +11,11 @@ if(isset($_POST['btn-save']))
  $nickname = $_POST['nickname'];
  $homeadd = $_POST['homeadd'];
  $cellno = $_POST['cellno'];
+ $comment = $_POST['comment'];
  // variables for input data
 
  // sql query for inserting data into database
- $sql_query = "INSERT INTO users(firstname,midname,lastname,email,gender,nickname,homeadd,cellno) VALUES('$firstname','$midname','$lastname','$email','$gender','$nickname','$homeadd,'$cellno')";
+ $sql_query = "INSERT INTO users(firstname,midname,lastname,email,gender,nickname,homeadd,cellno,comment) VALUES('$firstname','$midname','$lastname','$email','$gender','$nickname','$homeadd,'$cellno','$comment')";
  // sql query for inserting data into database
  
  // sql query execution function
@@ -85,6 +86,9 @@ if(isset($_POST['btn-save']))
     </tr>
 	<tr>
     <td><input type="text" name="cellno" placeholder="Cell No." required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="comment" placeholder="Comment" required /></td>
     </tr>
     <tr>
     <td><button type="submit" name="btn-save"><strong>SAVE</strong></button></td>
