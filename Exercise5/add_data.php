@@ -65,7 +65,7 @@ if(isset($_POST['btn-save']))
     <td><input type="text" name="last_name" placeholder="Last Name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" required /></td>
+    <td><input type="text" name="homeadd" placeholder="Address" required /></td>
     </tr>
     <tr>
     <td><button type="submit" name="btn-save"><strong>SAVE</strong></button></td>

@@ -73,7 +73,7 @@ if(isset($_POST['btn-cancel']))
     <td><input type="text" name="last_name" placeholder="Last Name" value="<?php echo $fetched_row['last_name']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" value="<?php echo $fetched_row['user_city']; ?>" required /></td>
+    <td><input type="text" name="homeadd" placeholder="Address" value="<?php echo $fetched_row['user_city']; ?>" required /></td>
     </tr>
     <tr>
     <td>
