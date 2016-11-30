@@ -50,6 +50,7 @@ function delete_id(id)
     <th colspan="5"><a href="add_data.php">add data here.</a></th>
     </tr>
     <th>First Name</th>
+	<th>Middle Name</th>
     <th>Last Name</th>
     <th>City Name</th>
     <th colspan="2">Operations</th>

@@ -66,6 +66,9 @@ if(isset($_POST['btn-cancel']))
     <tr>
     <td><input type="text" name="first_name" placeholder="First Name" value="<?php echo $fetched_row['first_name']; ?>" required /></td>
     </tr>
+	<tr>
+    <td><input type="text" name="midname" placeholder="Middle Name" required /></td>
+    </tr>
     <tr>
     <td><input type="text" name="last_name" placeholder="Last Name" value="<?php echo $fetched_row['last_name']; ?>" required /></td>
     </tr>

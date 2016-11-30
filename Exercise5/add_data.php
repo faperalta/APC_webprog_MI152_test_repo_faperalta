@@ -58,6 +58,9 @@ if(isset($_POST['btn-save']))
     <tr>
     <td><input type="text" name="first_name" placeholder="First Name" required /></td>
     </tr>
+	<tr>
+    <td><input type="text" name="midname" placeholder="Middle Name" required /></td>
+    </tr>
     <tr>
     <td><input type="text" name="last_name" placeholder="Last Name" required /></td>
     </tr>
