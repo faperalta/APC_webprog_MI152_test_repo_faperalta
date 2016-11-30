@@ -134,7 +134,7 @@ echo "<br>";
 ?>
 </div>
 
-<button onclick="location.href = 'about.html';" id="myButton" class="float-left submit-button">Proceed</button>
+<button onclick="location.href = 'homepage.php';" id="myButton" class="float-left submit-button">Proceed</button>
 
 </body>
 </html>
