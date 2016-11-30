@@ -3,13 +3,14 @@ include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
 {
  // variables for input data
- $first_name = $_POST['first_name'];
- $last_name = $_POST['last_name'];
- $city_name = $_POST['city_name'];
+ $firstname = $_POST['firstname'];
+ $midname = $_POST['midname'];
+ $lastname = $_POST['lastname'];
+ $homeadd = $_POST['homeadd'];
  // variables for input data
 
  // sql query for inserting data into database
- $sql_query = "INSERT INTO users(first_name,last_name,user_city) VALUES('$first_name','$last_name','$city_name')";
+ $sql_query = "INSERT INTO users(firstname,midname,lastname,homeadd) VALUES('$firstname','$midname','$lastname','$homeadd')";
  // sql query for inserting data into database
  
  // sql query execution function
@@ -56,13 +57,13 @@ if(isset($_POST['btn-save']))
     <td align="center"><a href="index.php">back to main page</a></td>
     </tr>
     <tr>
-    <td><input type="text" name="first_name" placeholder="First Name" required /></td>
+    <td><input type="text" name="firstname" placeholder="First Name" required /></td>
     </tr>
 	<tr>
     <td><input type="text" name="midname" placeholder="Middle Name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="last_name" placeholder="Last Name" required /></td>
+    <td><input type="text" name="lastname" placeholder="Last Name" required /></td>
     </tr>
     <tr>
     <td><input type="text" name="homeadd" placeholder="Address" required /></td>
