@@ -6,11 +6,12 @@ if(isset($_POST['btn-save']))
  $firstname = $_POST['firstname'];
  $midname = $_POST['midname'];
  $lastname = $_POST['lastname'];
+ $email = $_POST['email'];
  $homeadd = $_POST['homeadd'];
  // variables for input data
 
  // sql query for inserting data into database
- $sql_query = "INSERT INTO users(firstname,midname,lastname,homeadd) VALUES('$firstname','$midname','$lastname','$homeadd')";
+ $sql_query = "INSERT INTO users(firstname,midname,lastname,homeadd,email) VALUES('$firstname','$midname','$lastname','$homeadd',$'email')";
  // sql query for inserting data into database
  
  // sql query execution function
@@ -64,6 +65,9 @@ if(isset($_POST['btn-save']))
     </tr>
     <tr>
     <td><input type="text" name="lastname" placeholder="Last Name" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="email" placeholder="Email" required /></td>
     </tr>
     <tr>
     <td><input type="text" name="homeadd" placeholder="Address" required /></td>
