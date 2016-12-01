@@ -75,8 +75,8 @@ if(isset($_POST['btn-save']))
     </tr>
 	<tr>
     <td>
-		<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="female">Female
-		<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="male">Male
+		<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+		<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
     </tr>
 	<tr>
     <td><input type="text" name="nickname" placeholder="Nickname" required /></td>
