@@ -9,9 +9,7 @@ if(isset($_GET['edit_id']))
 if(isset($_POST['btn-update']))
 {
  // variables for input data
- $firstname = $_POST['firstname'];
- $midname = $_POST['midname'];
- $lastname = $_POST['lastname'];
+ $compname = $_POST['compname'];
  $email = $_POST['email'];
  $gender = $_POST['gender'];
  $nickname = $_POST['nickname'];
@@ -20,7 +18,7 @@ if(isset($_POST['btn-update']))
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET firstname='$firstname',midname='$midname',lastname='$lastname',email='$email',gender='$gender',nickname='$nickname',homeadd='$homeadd',comment='$comment' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET compname='$compname',email='$email',gender='$gender',nickname='$nickname',homeadd='$homeadd',comment='$comment' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -69,21 +67,15 @@ if(isset($_POST['btn-cancel']))
     <form method="post">
     <table align="center">
     <tr>
-    <td><input type="text" name="firstname" placeholder="First Name" value="<?php echo $fetched_row['firstname']; ?>" required /></td>
-    </tr>
-	<tr>
-    <td><input type="text" name="midname" placeholder="Middle Name" value="<?php echo $fetched_row['midname']; ?>" required /></td>
-    </tr>
-    <tr>
-    <td><input type="text" name="lastname" placeholder="Last Name" value="<?php echo $fetched_row['lastname']; ?>" required /></td>
+    <td><input type="text" name="compname" placeholder="Complete Name" value="<?php echo $fetched_row['compname']; ?>" required /></td>
     </tr>
 	<tr>
     <td><input type="text" name="email" placeholder="Email" value="<?php echo $fetched_row['email']; ?>" required /></td>
     </tr>
 	<tr>
     <td>
-	<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="female">Female
-	<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="male">Male</td>
+	<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="female">female
+	<input type="radio" name="gender"  <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="male">male</td>
     </tr>
 	<tr>
     <td><input type="text" name="nickname" placeholder="Nickname" value="<?php echo $fetched_row['nickname']; ?>" required /></td>

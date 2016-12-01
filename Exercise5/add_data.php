@@ -3,9 +3,7 @@ include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
 {
  // variables for input data
- $firstname = $_POST['firstname'];
- $midname = $_POST['midname'];
- $lastname = $_POST['lastname'];
+ $compname = $_POST['compname'];
  $email = $_POST['email'];
  $gender = $_POST['gender'];
  $nickname = $_POST['nickname'];
@@ -15,7 +13,7 @@ if(isset($_POST['btn-save']))
  // variables for input data
 
  // sql query for inserting data into database
- $sql_query = "INSERT INTO users(firstname,midname,lastname,email,gender,nickname,homeadd,cellno,comment) VALUES('$firstname','$midname','$lastname','$email','$gender','$nickname','$homeadd','$cellno','$comment')";
+ $sql_query = "INSERT INTO users(compname,email,gender,nickname,homeadd,cellno,comment) VALUES('$compname','$email','$gender','$nickname','$homeadd','$cellno','$comment')";
  // sql query for inserting data into database
  
  // sql query execution function
@@ -62,13 +60,7 @@ if(isset($_POST['btn-save']))
     <td align="center"><a href="index.php">back to main page</a></td>
     </tr>
     <tr>
-    <td><input type="text" name="firstname" placeholder="First Name" required /></td>
-    </tr>
-	<tr>
-    <td><input type="text" name="midname" placeholder="Middle Name" required /></td>
-    </tr>
-    <tr>
-    <td><input type="text" name="lastname" placeholder="Last Name" required /></td>
+    <td><input type="text" name="compname" placeholder="Complete Name" required /></td>
     </tr>
 	<tr>
     <td><input type="text" name="email" placeholder="Email" required /></td>

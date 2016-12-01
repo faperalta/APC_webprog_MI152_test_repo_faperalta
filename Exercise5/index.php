@@ -47,11 +47,9 @@ function delete_id(id)
  <div id="content">
     <table align="center">
     <tr>
-    <th colspan="11"><a href="add_data.php">add data here.</a></th>
+    <th colspan="9"><a href="add_data.php">add data here.</a></th>
     </tr>
-    <th>First Name</th>
-	<th>Middle Name</th>
-    <th>Last Name</th>
+    <th>Complete Name</th>
 	<th>Email</th>
 	<th>Gender</th>
 	<th>Nickname</th>
@@ -77,8 +75,6 @@ function delete_id(id)
 		<td><?php echo $row[5]; ?></td>
 		<td><?php echo $row[6]; ?></td>
 		<td><?php echo $row[7]; ?></td>
-		<td><?php echo $row[8]; ?></td>
-		<td><?php echo $row[9]; ?></td>
 
   <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="b_edit.png" align="EDIT" /></a></td>
         <td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="b_drop.png" align="DELETE" /></a></td>
