@@ -5,7 +5,8 @@ include_once 'dbconfig.php';
 if(isset($_GET['delete_id']))
 {
  $sql_query="DELETE FROM users WHERE user_id=".$_GET['delete_id'];
- mysql_query($sql_query);
+ //mysql_query($sql_query);
+ mysqli_query($link, $sql_query);
  header("Location: $_SERVER[PHP_SELF]");
 }
 // delete condition
@@ -63,8 +64,10 @@ function delete_id(id)
     </tr>
     <?php
  $sql_query="SELECT * FROM users";
- $result_set=mysql_query($sql_query);
- while($row=mysql_fetch_row($result_set))
+ //$result_set=mysql_query($sql_query);
+ //while($row=mysql_fetch_row($result_set))
+	  $result_set=mysqli_query($link, $sql_query);
+	  while($row=mysqli_fetch_row($result_set))
  {
   ?>
         <tr>
