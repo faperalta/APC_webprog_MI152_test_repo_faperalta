@@ -3,8 +3,8 @@ include_once 'dbconfig.php';
 if(isset($_GET['edit_id']))
 {
  $sql_query="SELECT * FROM users WHERE user_id=".$_GET['edit_id'];
- $result_set=mysql_query($sql_query);
- $fetched_row=mysql_fetch_array($result_set);
+ $result_set=mysqli_query($link, $sql_query);
+ $fetched_row=mysqli_fetch_array($result_set);
 }
 if(isset($_POST['btn-update']))
 {
@@ -18,7 +18,7 @@ if(isset($_POST['btn-update']))
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET compname='$compname',email='$email',gender='$gender',nickname='$nickname',homeadd='$homeadd',comment='$comment' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET compname='$compname',email='$email',gender='$gender',nickname='$nickname',homeadd='$homeadd',cellno='$cellno',comment='$comment' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -85,7 +85,9 @@ if(isset($_POST['btn-cancel']))
     <tr>
     <td><input type="text" name="homeadd" placeholder="Address" value="<?php echo $fetched_row['homeadd']; ?>" required /></td>
     </tr>
-	tr>
+	<tr>
+    <td><input type="text" name="cellno" placeholder="Cell No." required /></td>
+    </tr>
     <td><input type="text" name="comment" placeholder="Comment" value="<?php echo $fetched_row['comment']; ?>" required /></td>
     </tr>
     <tr>
