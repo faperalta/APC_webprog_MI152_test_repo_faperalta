@@ -6,5 +6,9 @@ CREATE TABLE users(
     `address` varchar(255),
     `sex` varchar(6),
     `no` varchar(11),
-    `comment` varchar(500)
-    );
+    `comment` varchar(500),
+	`slug` varchar(128) NOT NULL,
+	 KEY `slug` (`slug`)
+	 )
+	 ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+	 
