@@ -53,55 +53,36 @@ a:active {
 
 </head>
 	
-<body style="background-image: url(http://localhost/Exercise6/codeigniter/Pics/background2.jpg);">
-<center>
-<h1><a href = "<?php echo base_url(); ?>index.php/users/add_view">Create Database</a></h1>
-</center>
-      
-		
-      <table border = "1"> 
-         <?php 
-            $i = 1; 
-            echo "<tr>"; 
-            echo "<td>User Id</td>"; 
-            echo "<td>Complete Name</td>"; 
-            echo "<td>Nickname</td>"; 
-            echo "<td>Email Address</td>";
-            echo "<td>Home Address</td>";
-            echo "<td>Sex</td>"; 
-            echo "<td>Cellphone No</td>"; 
-            echo "<td>Edit</td>"; 
-            echo "<td>Delete</td>"; 
-            
-            echo "<tr>"; 
-				
-            foreach($records as $r) { 
-               echo "<tr>"; 
-               echo "<td>".$r->user_id."</td>"; 
-               echo "<td>".$r->complete_name."</td>"; 
-               echo "<td>".$r->nick."</td>"; 
-               echo "<td>".$r->eadd."</td>"; 
-               echo "<td>".$r->address."</td>"; 
-               echo "<td>".$r->sex."</td>"; 
-               echo "<td>".$r->no."</td>"; 
-               echo "<td><a href = '".base_url()."index.php/users/edit/"
-                  .$r->user_id."'>Edit</a></td>"; 
-               echo "<td><a href = '".base_url()."index.php/users/delete/"
-                  .$r->user_id."'>Delete</a></td>"; 
-               echo "<tr>"; 
-            } 
-         ?>
-      </table><br><br> 
+<body style="background-image: url(http://localhost/Exercise6/codeigniter/Pics/background2.jpg);">		
+      <table border='1' cellpadding='4'>
+    <tr>
+        <td><strong>Complete Name</strong></td>
+        <td><strong>Nickname</strong></td>
+        <td><strong>Email Address</strong></td>
+		<td><strong>Address</strong></td>
+		<td><strong>Sex</strong></td>
+		<td><strong>Cell No.</strong></td>
+		<td><strong>Comment.</strong></td>
+    </tr>
+<?php foreach ($news as $news_item): ?>
+        <tr>
+            <td><?php echo $news_item['complete_name']; ?></td>
+            <td><?php echo $news_item['nick']; ?></td>
+			<td><?php echo $news_item['eadd']; ?></td>
+			<td><?php echo $news_item['address']; ?></td>
+			<td><?php echo $news_item['sex']; ?></td>
+			<td><?php echo $news_item['no']; ?></td>
+			<td><?php echo $news_item['comment']; ?></td>
+			
+            <td>
+                <a href="<?php echo site_url('news/'.$news_item['slug']); ?>">View</a> |
+                <a href="<?php echo site_url('news/edit/'.$news_item['id']); ?>">Edit</a> |
+                <a href="<?php echo site_url('news/delete/'.$news_item['id']); ?>" onClick="return confirm('Are you sure you want to delete?')">Delete</a>
+            </td>
+        </tr>
+<?php endforeach; ?>
+</table>
 	 
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  <br>
 	  <br>
 	  <br>
 	  <br>
