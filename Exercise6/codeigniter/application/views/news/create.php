@@ -32,7 +32,7 @@
             <td><label for="text">Nickname</label></td>
             <td><input type="input" name="nick" size="50" /></td>
         </tr>
-        <tr>
+       
 		<tr>
             <td><label for="title">Email Address</label></td>
             <td><input type="input" name="eadd" size="50" /></td>
@@ -42,9 +42,10 @@
             <td><input type="input" name="address" size="50" /></td>
         </tr>
 		<tr>
-            <td><label for="title">Sex</label></td>
-            <td><input type="input" name="sex" size="50" /></td>
-        </tr>
+			<td><label for="title">Sex</label></td>
+            <td><input type="radio" name="sex" <?php if (isset($sex) && $sex=="Male") echo "checked";?> value="Male">Male
+			<input type="radio" name="sex" <?php if (isset($sex) && $sex=="Female") echo "checked";?> value="Female">Female</td>
+		</tr>
 		<tr>
             <td><label for="title">Cell No.</label></td>
             <td><input type="input" name="no" size="50" /></td>
@@ -55,7 +56,7 @@
         </tr>
             <td></td>
             <td><input type="submit" name="submit" value="Create news item" /></td>
-        </tr>
+        
     </table>    
 </form>
    </body>
