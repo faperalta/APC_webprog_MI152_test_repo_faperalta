@@ -15,7 +15,7 @@ class News extends CI_Controller {
  
         $this->load->view('templates/header', $data);
         $this->load->view('news/index', $data);
-        $this->load->view('templates/footer');
+        
     }
  
     public function view($slug = NULL)
@@ -27,11 +27,11 @@ class News extends CI_Controller {
             show_404();
         }
  
-        $data['title'] = $data['news_item']['title'];
+        
  
         $this->load->view('templates/header', $data);
         $this->load->view('news/view', $data);
-        $this->load->view('templates/footer');
+        
     }
     
     public function create()
@@ -39,7 +39,7 @@ class News extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
  
-        $data['title'] = 'Create a news item';
+        $data['title'] = 'Create a data';
  
         $this->form_validation->set_rules('complete_name', 'Complete Name', 'required');
         $this->form_validation->set_rules('nick', 'nick', 'required');
@@ -48,7 +48,7 @@ class News extends CI_Controller {
         {
             $this->load->view('templates/header', $data);
             $this->load->view('news/create');
-            $this->load->view('templates/footer');
+           
  
         }
         else
@@ -56,7 +56,7 @@ class News extends CI_Controller {
             $this->news_model->set_news();
             $this->load->view('templates/header', $data);
             $this->load->view('news/success');
-            $this->load->view('templates/footer');
+            
         }
     }
     
@@ -72,7 +72,7 @@ class News extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         
-        $data['title'] = 'Edit a news item';        
+        $data['title'] = 'Edit a data ';        
         $data['news_item'] = $this->news_model->get_news_by_id($id);
         
         $this->form_validation->set_rules('complete_name', 'Complete Name', 'required');
@@ -82,7 +82,7 @@ class News extends CI_Controller {
         {
             $this->load->view('templates/header', $data);
             $this->load->view('news/edit', $data);
-            $this->load->view('templates/footer');
+            
  
         }
         else
