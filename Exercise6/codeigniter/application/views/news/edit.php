@@ -24,20 +24,20 @@
     <table>
         <tr>
             <td><label for="title">Complete Name</label></td>
-            <td><input type="input" name="complete_name" size="50"/></td>
+            <td><input type="input" name="complete_name" size="50" value="<?php echo $news_item['complete_name'] ?>"/></td>
         </tr>
         <tr>
             <td><label for="text">Nickname</label></td>
-            <td><input type="input" name="nick" size="50" /></td>
+            <td><input type="input" name="nick" size="50" value="<?php echo $news_item['nick'] ?>" /></td>
         </tr>
         <tr>
 		<tr>
             <td><label for="title">Email Address</label></td>
-            <td><input type="input" name="eadd" size="50" /></td>
+            <td><input type="input" name="eadd" size="50" value="<?php echo $news_item['eadd'] ?>"  /></td>
         </tr>
 		<tr>
             <td><label for="title">Address</label></td>
-            <td><input type="input" name="address" size="50" /></td>
+            <td><input type="input" name="address" size="50" value="<?php echo $news_item['address'] ?>"  /></td>
         </tr>
 		<tr>
 			<td><label for="title">Sex</label></td>
@@ -46,7 +46,7 @@
 		</tr>
 		<tr>
             <td><label for="title">Cell No.</label></td>
-            <td><input type="input" name="no" size="50" /></td>
+            <td><input type="input" name="no" size="50" value="<?php echo $news_item['no'] ?>" /></td>
         </tr>
 		<tr>
             <td><label for="title">Comment</label></td>
