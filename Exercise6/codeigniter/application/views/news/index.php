@@ -2,32 +2,20 @@
 <html lang = "en">
 
 <style>
-
-
-
 body {
    font-family: cursive;
 }
-
 table {
     border-collapse: collapse;
     width: 100%;
     font-size: 24px;
 	
 }
-
 th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-
-img {
-position: fixed;
-top: 390px;
-left: 430px;
-}
-
 a:link {
     color: blue;
     background-color: transparent;
@@ -48,7 +36,6 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
-
 </style>
 
 </head>
