@@ -37,7 +37,69 @@ a:active {
     text-decoration: underline;
 }
 </style>
+	<style>
+	h1 {
 
+    font-size: 24px;
+    text-align: center;
+}
+
+#dog{
+position: absolute	;
+left: 100px;
+top: 1350px;
+}
+
+#laundry{
+position: absolute;
+left: 450px;
+top: 1350px;}
+
+#roller{
+position: absolute;
+left: 800px;
+top: 1350px;
+}
+
+#pancake{
+position: absolute;
+left: 100px;
+top: 1000px;
+}
+
+#condo{
+position: absolute;
+left: 450px;
+top: 1000px;
+}
+
+#job{
+position: absolute;
+left: 800px;
+top: 1000px;
+}
+
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+</style>
 </head>
 	
 <body style="background-image: url(http://localhost/Exercise6/codeigniter/Pics/background2.jpg);">		
@@ -117,6 +179,56 @@ a:active {
 		<tr>
   </tr>
 </table>
+
+<h1 id = "prefer">Which do I prefer?</h1>
+
+<div id = "dog">
+<p>Dog or Cat?</p>
+
+<p id="demo" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/doge.jpg" style = "width: 250px;"></p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">I prefer</button>
+</div>
+
+<div id="laundry">
+<p>Washing dishes or Doing laundry?</p>
+
+<p id="demo2" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/laundry.png" style = "width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">I prefer</button>
+</div>
+
+<div id="roller">
+<p>Ferris wheel or Roller Coaster?</p>
+
+<p id="demo3" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/roller.jpg" style = "width: 300px;"></p>
+
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">I prefer</button>
+</div>
+
+<div id="pancake">
+<p>Bacon or Pancake?</p>
+
+<p id="demo4" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/pancake.jpg" style = "width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo4').style.display='block'">I prefer</button>
+</div>
+
+<div id="condo">
+<p>Condominium or House?</p>
+
+<p id="demo5" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/condo.jpg" style = "width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo5').style.display='block'">I prefer</button>
+</div>
+<br>
+
+<div id="job">
+<p>Win the lottery or find your perfect job?</p>
+
+<p id="demo6" style="display:none"><img src = "http://localhost/Exercise6/codeigniter/Pics/job.jpg" style = "width: 250px;"></p>
+
+<button type="button" onclick="document.getElementById('demo6').style.display='block'">I prefer</button>
+</div>
    </body>
 	
 </html>
